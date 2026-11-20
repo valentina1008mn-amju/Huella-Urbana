@@ -1,22 +1,86 @@
-body {
-  background-color: #fcbbe0;
-}
-header {
-  background-color: #fa8fcb;
+:root{
+  --blue_light: #BCCAD4;
+  --greyblue_light: #CED6DB;
+  --blue1: #88B6D3;
+  --blue_dark:#051824;
+
 }
 
+
+
+body {
+  background-color: var(--blue_light);
+  
+
+}
+header {
+  background-color: var(--blue_dark);
+}
+
+header img{
+  width: 300px;
+  height: 200px;
+}
+
+nav ul{
+  list-style: none;
+  text-align: right;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--greyblue_light);
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav a{
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--greyblue_light);
+}
 p {
   font-size: 20pt;
 }
 
 #eslogan{
-  color: purple;
+  color: var(--blue_dark);
   font-size: 30pt;
 }
 
 
 
+
 img{
-    width: 300px;
-    height: 200px;
+width: 100%;
+height: 90%;
+  
+}
+
+#inicio{
+  text-align: center;
+}
+
+#inicio img{
+  width: 600px;
+  height: 600px;
+}
+
+.boton{
+  display: inline-block;
+  background-color: var(--blue_dark);
+  color: var(--blue_light);
+  padding: 12px 40px;
+  margin: 20px 15px;
+  border-radius: 20px;
+}
+
+.boton:hover{
+  background-color: var(--blue_light);
+  color: var(--blue_dark);
+
+
 }
